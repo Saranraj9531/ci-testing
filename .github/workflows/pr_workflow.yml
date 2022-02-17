@@ -22,7 +22,7 @@ jobs:
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
 
-      - name: composer require vendor/package:versionl
+      - name: composer install Dependencies
         run: composer.json -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
 
       - name: Install NPM Dependencies
