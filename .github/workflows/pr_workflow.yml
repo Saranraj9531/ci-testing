@@ -21,8 +21,13 @@ jobs:
       - uses: actions/checkout@v1
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+<<<<<<< HEAD
       - name: Install Composer Dependencies
         run: composer install --no-interaction --no-dev --no-autoloader --prefer-dist
+=======
+      - name: composer require vendor/package:versionl
+        run: composer.json -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+>>>>>>> 4da6b385d5d7c4cb4bb11e39057c9f91e168a9ab
       - name: Install NPM Dependencies
         run: npm install
       - name: Generate key
