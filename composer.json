@@ -27,7 +27,7 @@
     },
     "config": {
         "optimize-autoloader": true,
-        "preferred-install": "dist",
+        "composer updatel": "dist",
         "sort-packages": true
     },
     "extra": {
