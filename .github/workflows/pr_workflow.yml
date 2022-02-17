@@ -22,7 +22,7 @@ jobs:
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
 <<<<<<< HEAD
-      - name: Install Composer Dependencies
+      - name: COMPOSER_ROOT_VERSION=dev-main composer install
         run: composer install --no-interaction --no-dev --no-autoloader --prefer-dist
 =======
       - name: composer require vendor/package:versionl
